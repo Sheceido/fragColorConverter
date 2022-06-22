@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Frag_Color Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="flex">
+            <h1>RGB to gl_FragColor</h1>
+            <h6>Enter RGB values and returns the equivalent decimal value to be placed into gl_FragColor</h6>
+        </div>
+        <div class="flex">
+            <div class="card">
+                <label for="r">R: </label>
+                <input type="number" id="r" name="r" value="0"><br><br>
+                <label for="g">G: </label>
+                <input type="number" id="g" name="g" value="0"><br><br>
+                <label for="b">B: </label>
+                <input type="number" id="b" name="b" value="0"><br><br>
+                <label for="a">A: </label>
+                <input type="number" id="a" name="a" value="1.0"><br><br>
+            </div>
+            <div class="card">
+                <label for="output">Output:</label><br>
+                <textarea name="output" id="output" disabled></textarea>
+            </div>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
